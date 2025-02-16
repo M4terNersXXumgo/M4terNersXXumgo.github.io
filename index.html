@@ -7,16 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" type="image/x-icon" href="https://m4ternersxxumgo.github.io/assets/img/client-logo/umgo-logo.png">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/client-logo/umgo-logo.png">
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- ========================= CSS here ========================= -->
 		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
         <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
-		<link rel="stylesheet" href="https://m4ternersxxumgo.github.io/assets/css/animate.css">
-		<link rel="stylesheet" href="https://m4ternersxxumgo.github.io/assets/css/tiny-slider.css">
-		<link rel="stylesheet" href="https://m4ternersxxumgo.github.io/assets/css/glightbox.min.css">
-		<link rel="stylesheet" href="https://m4ternersxxumgo.github.io/assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/tiny-slider.css">
+		<link rel="stylesheet" href="assets/css/glightbox.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            .team-img img {
+                width: 100%; /* Menyesuaikan dengan lebar parent */
+                height: 300px; /* Atur tinggi sesuai kebutuhan */
+                object-fit: cover; /* Memastikan gambar tetap proporsional */
+                border-radius: 10px; /* Opsional: untuk memberi efek sudut melengkung */
+            }
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -49,7 +57,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/logo/logo.png" width="78px" alt="Logo">
+                                <img src="assets/img/logo/logo.png" width="78px" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -65,17 +73,14 @@
                                         <a class="page-scroll active collapsed" href="#home">Utama</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#about">Sekilas Info</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="page-scroll" href="#materi">Materi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Tim Kami</a>
+                                        <a class="page-scroll" href="#about">Tentang kami</a>
                                     </li>
                         
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="contact.html">Kontak</a>
+                                        <a class="page-scroll" href="#kontak">Kontak</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -95,15 +100,14 @@
                         <div class="hero-content-wrapper">
                             <h2 class="mb-25 wow fadeInDown" data-wow-delay=".2s">Selamat datang di situs web! Kelompok IV Maternitas Ners XX UMGO</h2>
                             <h1 class="mb-25 wow fadeInDown" data-wow-delay=".2s">Temukan informasi seputar Maternitas</h1>
-                            <p class="mb-35 wow fadeInLeft" data-wow-delay=".4s">yang membahas tentang Hiperemesis gravidarum</p>
                             <a href="#prev-maternitas" onclick="smoothScroll(event, 'prev-maternitas')" class="theme-btn">Jelajah Maternitas!</a>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-6">
                         <div class="hero-img">
                             <div class="d-inline-block hero-img-right">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/hero/hero-img1.png" alt="" class="image wow fadeInRight" data-wow-delay=".5s">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/hero/dots.shape.svg" alt="" class="dot-shape">
+                                <img src="assets/img/hero/hero-img1.png" alt="" class="image wow fadeInRight" data-wow-delay=".5s">
+                                <img src="assets/img/hero/dots.shape.svg" alt="" class="dot-shape">
                             </div>
                         </div>
                     </div>
@@ -118,16 +122,16 @@
                 <div class="client-logo-wrapper">
                     <div class="client-logo-carousel d-flex align-items-center justify-content-between">
                         <div class="client-logo">
-                            <img src="https://m4ternersxxumgo.github.io/assets/img/client-logo/umgo-logo.png" alt="">
+                            <img src="assets/img/client-logo/umgo-logo.png" alt="">
                         </div>
                         <div class="client-logo">
-                            <img src="https://m4ternersxxumgo.github.io/assets/img/client-logo/logo.png" alt="">
+                            <img src="assets/img/client-logo/logo.png" alt="">
                         </div>
                         <div class="client-logo">
-                            <img src="https://m4ternersxxumgo.github.io/assets/img/client-logo/umgo-logo.png" alt="">
+                            <img src="assets/img/client-logo/umgo-logo.png" alt="">
                         </div>
                         <div class="client-logo">
-                            <img src="https://m4ternersxxumgo.github.io/assets/img/client-logo/logo.png" alt="">
+                            <img src="assets/img/client-logo/logo.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -187,6 +191,93 @@
         </section>
         <!-- ========================= feature-section end ========================= -->
 
+        
+         <!-- ========================= contact-section start ========================= -->
+        <section id="materi" class="contact-section pt-130">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title mb-60">
+                            <span class="wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Materi</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Diagnosis Medis</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="contact-item-wrapper">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <a href="medicdiagnose-page/hg.html" class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-eye"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>⁠Hiperemesis Gravidarum</h4>
+                                            <p>Baca selengkapnya</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <a href="medicdiagnose-page/anemia.html" class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-eye"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Anemia pada Ibu Hamil</h4>
+                                            <p>Baca selengkapnya</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <a href="medicdiagnose-page/perdarahpostpartum.html" class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-eye"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Perdarahan Post Partum</h4>
+                                            <p>Baca selengkapnya</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="contact-item-wrapper">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <a href="medicdiagnose-page/miomeuteri.html" class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-eye"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Mioma Uteri</h4>
+                                            <p>Baca selengkapnya</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <a href="medicdiagnose-page/preeklampsia.html" class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-eye"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Pre-Eklamsia</h4>
+                                            <p>Baca selengkapnya</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= contact-section end ========================= -->
+
         <!--========================= about-section start========================= -->
         <section id="about" class="pt-100">
             <div class="about-section">
@@ -195,7 +286,7 @@
                         <div class="col-xl-6 col-lg-6">
                             <div class="about-img-wrapper">
                                 <div class="about-img position-relative d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                                    <img src="https://m4ternersxxumgo.github.io/assets/img/about/about-img.png" alt="">
+                                    <img src="assets/img/about/about-img.png" alt="">
 
                                     <div class="about-experience">
                                         <h3>Edukasi Medis Terpercaya</h3>
@@ -211,12 +302,11 @@
                                     <h2 class="mb-40 wow fadeInRight" data-wow-delay=".4s">KELOMPOK IV MATERNITAS NERS XX UMGO</h2>
                                 </div>
                                 <div class="about-content">
-                                    <p class="mb-40 wow fadeInLeft">Mendukung Ibu dalam Mengatasi Hiperemesis Gravidarum dengan Ilmu & Kepedulian</p>
-                                    <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">Kami adalah Kelompok IV Maternitas NERS XX Universitas Muhammadiyah Gorontalo (UMGO), sebuah tim yang berfokus pada edukasi dan pendampingan bagi ibu hamil yang mengalami Hiperemesis Gravidarum (HG). Dengan latar belakang keperawatan maternitas, kami hadir untuk memberikan informasi berbasis ilmiah dan dukungan bagi ibu hamil agar dapat menghadapi HG dengan lebih baik.</p>
+                                    <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">Kami adalah Kelompok IV Maternitas NERS XX Universitas Muhammadiyah Gorontalo (UMGO), sebuah tim yang berfokus pada edukasi dan pendampingan bagi ibu hamil untuk diagnosa medis. Dengan latar belakang keperawatan maternitas, kami hadir untuk memberikan informasi berbasis ilmiah dan dukungan bagi ibu hamil.</p>
                                     <div class="counter-up wow fadeInUp" data-wow-delay=".5s">
                                         
                                         <div class="counter">
-                                            <a href="#team" onclick="smoothScroll(event, 'prev-maternitas')" class="theme-btn">Lihat anggota kelompok</a>
+                                            <a href="#team" onclick="smoothScroll(event, 'prev-maternitas')" class="theme-btn">Lihat Tim kami</a>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +325,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".2s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-1.jpg" alt="">
+                                <img src="assets/img/team/nisa.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -254,7 +344,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".4s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-2.jpg" alt="">
+                                <img src="assets/img/team/vidya.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -273,7 +363,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".6s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-3.jpg" alt="">
+                                <img src="assets/img/team/adinda.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -290,9 +380,28 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="team-img">
+                                <img src="assets/img/team/niaayuni.jpeg" alt="">
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>Nia Ayuni Mopangga</h4>
+                                <span>Ners XX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".8s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-4.jpg" alt="">
+                                <img src="assets/img/team/nur.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -311,7 +420,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".2s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-1.jpg" alt="">
+                                <img src="assets/img/team/ayukatili.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -330,7 +439,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".4s">
                             <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-2.jpg" alt="">
+                                <img src="assets/img/team/ary.jpeg" alt="">
                                 <div class="team-social">
                                     <ul>
                                         <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -346,112 +455,71 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="team-img">
-                                <img src="https://m4ternersxxumgo.github.io/assets/img/team/team-2.jpg" alt="">
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-info">
-                                <h4>Nia Ayuni Mopangga</h4>
-                                <span>Ners XX</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <!-- ========================= team-section end ========================= -->
-         <!-- ========================= materi-section start ========================= -->
-        <section id="materi" class="blog-section pt-130 pb-100">
+
+        <!-- ========================= contact-section start ========================= -->
+        <section id="kontak" class="contact-section pt-130">
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="section-title mb-60">
-                            <span class="wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Materi</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Hiperemesis Gravidarum</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="section-title mb-60">
-                            <p class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Hiperemesis Gravidarum adalah mual dan muntah berlebihan pada kehamilan yang dapat menyebabkan dehidrasi, ketidakseimbangan elektrolit, hingga penurunan berat badan yang signifikan.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-blog mb-40 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="blog-img">
-                                <a href="blog-single.html"><img src="https://m4ternersxxumgo.github.io/assets/img/blog/picture1.png" alt=""></a>
+                    <div class="col-xl-8 mx-auto">
+                        <div class="contact-form-wrapper">
+                            <div class="row">
+                                <div class="col-xl-10 col-lg-8 mx-auto">
+                                    <div class="section-title text-center mb-50">
+                                        <span class="wow fadeInDown" data-wow-delay=".2s">Kirim Pesan</span>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Tanya seputar Materi Maternitas</h2>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="blog-content">
-                                <h4><a href="pengertian-blog.html">Pengertian Hiperemesis Gravidarum</a></h4>
-                                <p>Pada umumnya wanita dapat menyesuaikan diri dengan keadaan ini, meskipun demikian gejala mual dan muntah yang berat dapat berlangsung sampai 4 bulan.</p>
-                                <a href="pengertian-blog.html" class="read-more-btn">Baca selengkapnya <i class="lni lni-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-blog mb-40 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                            <div class="blog-img">
-                                <a href="blog-single.html"><img src="https://m4ternersxxumgo.github.io/assets/img/blog/picture2.png" alt=""></a>
-                            </div>
-                            <div class="blog-content">
-                                <h4><a href="etiologi-blog .html">Etiologi</a></h4>
-                                <p>tidak ada bukti bahwa penyakit ini disebabkan oleh faktor toksik, juga tidak ditemukan kelainan biokimia.</p>
-                                <a href="etiologi-blog.html" class="read-more-btn">Baca selengkapnya <i class="lni lni-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-blog mb-40 wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                            <div class="blog-img">
-                                <a href="blog-single.html"><img src="https://m4ternersxxumgo.github.io/assets/img/blog/picture3.jpg" alt=""></a>
-                            </div>
-                            <div class="blog-content">
-                                <h4><a href="patifisiologi-blog.html">Patofisiologi</a></h4>
-                                <p>Peningkatan hormone progesterone menyebabkan otot polos pada system gastrointestinal mengalami relaksasi sehingga motilitas lambung menurun dan pengosongan lambung melambat.</p>
-                                <a href="patifisiologi-blog.html" class="read-more-btn">Baca selengkapnya <i class="lni lni-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-blog mb-40 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="blog-img">
-                                <a href="blog-single.html"><img src="https://m4ternersxxumgo.github.io/assets/img/blog/picture1.png" alt=""></a>
-                            </div>
-                            <div class="blog-content">
-                                <h4><a href="manifesklinis-blog.html">Manifestasi Klinis</a></h4>
-                                <p>Hiperemesis gravidarum menurut berat ringannya gejala dibagi dalam tiga tingkatan menurut (Amru sofian,2012)</p>
-                                <a href="manifesklinis-blog.html" class="read-more-btn">Baca selengkapnya <i class="lni lni-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-blog mb-40 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                            <div class="blog-img">
-                                <a href="blog-single.html"><img src="https://m4ternersxxumgo.github.io/assets/img/blog/picture2.png" alt=""></a>
-                            </div>
-                            <div class="blog-content">
-                                <h4><a href="blog-single.html">Diagnosa & Intervensi Keperawatan</a></h4>
-                                <p>Hipetermia, Resiko Defisit Nutrisi, dll.</p>
-                                <a href="blog-single.html" class="read-more-btn">Baca selengkapnya <i class="lni lni-arrow-right"></i></a>
-                            </div>
+                            <form action="assets/php/mail.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="subject" id="email" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="button text-center">
+                                            <button type="submit" class="theme-btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ========================= materi-section end ========================= -->
+        <!-- ========================= contact-section end ========================= -->
+         <!-- ========================= map-section end ========================= -->
+        <section class="map-section">
+            <div class="map-container">
+                <object style="border:0; height: 690px; width: 100%;"
+                    data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.34902237008095!2d123.0155773072154!3d0.6204920858044047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x32792d93ebacdc03%3A0x8ad908e900f0b927!2sUniversitas%20Muhammadiyah%20Gorontalo!5e0!3m2!1sid!2sid!4v1739737989072!5m2!1sid!2sid"></object>
+            </div>
+            </div>
+        </section>
+        <!-- ========================= map-section end ========================= -->
+
 
         <!-- ========================= footer start ========================= -->
         <footer class="footer pt-100">
@@ -459,61 +527,38 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">
-                            <a href="index.html" class="logo mb-30"><img src="https://m4ternersxxumgo.github.io/assets/img/logo/logo.svg" alt="logo"></a>
-                            <p class="mb-30 footer-desc">We Crafted an awesome desig library that is robust and intuitive to use. No matter you're building a business presentation websit.</p>
+                            <a href="index.html" class="logo mb-30"><img src="assets/img/logo/logo.png" width="78px" alt="logo"></a>
+                            <p class="mb-30 footer-desc">Peduli, Edukasi, dan Dedikasi untuk Kesehatan Ibu dan Janin</p>
                         </div>
                     </div>
                     <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
                         <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">
-                            <h4>Quick Link</h4>
+                            <h4>UMGO Quick Link</h4>
                             <ul class="footer-links">
                                 <li>
-                                    <a href="javascript:void(0)">Home</a>
+                                    <a href="https://umgo.ac.id/?cat=4">UMGO</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">About Us</a>
+                                    <a href="https://fikes.umgo.ac.id">Fikes UMGO</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Service</a>
-                                </li> 
-                                <li>
-                                    <a href="javascript:void(0)">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">
-                            <h4>Service</h4>
-                            <ul class="footer-links">
-                                <li>
-                                    <a href="javascript:void(0)">Marketing</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Branding</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Web Design</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">Graphics Design</a>
+                                    <a href="https://keperawatan.umgo.ac.id">Jurusan Keperawatan</a>
                                 </li> 
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">
-                            <h4>Contact</h4>
+                            <h4>Kontak kami</h4>
                             <ul class="footer-contact">
                                 <li>
-                                    <p>+00983467367234</p>
+                                    <p>Instagram: @nersxxumgo</p>
                                 </li>
                                 <li>
-                                    <p>yourmail@gmail.com</p>
+                                    <p>e-Mail: nersxxumgo@umgo.ac.id</p>
                                 </li>
                                 <li>
-                                    <p>United State Of America
-                                    *12 Street House</p>
+                                    <p>Universitas Muhammdiyah Gorontalo. Jln Prof. Mansoer Pateda, Pentadio Timur, Kabupaten Gorontalo</p>
                                 </li>
                             </ul>
                         </div>
@@ -525,16 +570,9 @@
                         <div class="col-md-6">
                             <div class="footer-social-links">
                                 <ul class="d-flex">
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+                                    <li><a href="https://www.instagram.com/nersxxumgo?igsh=MTBrNzEzanlpbWhidQ=="><i class="lni lni-instagram-filled"></i></a></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="wow fadeInUp" data-wow-delay=".3s">Template Designed by <a
-                                    href="https://GrayGrids.com" rel="nofollow">GrayGrids</a></p>
                         </div>
                     </div>
                 </div>
@@ -550,12 +588,12 @@
 		<!-- ========================= JS here ========================= -->
 		<script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
 		<script src="assets/js/contact-form.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/count-up.min.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/tiny-slider.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/isotope.min.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/glightbox.min.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/wow.min.js"></script>
-        <script src="https://m4ternersxxumgo.github.io/assets/js/imagesloaded.min.js"></script>
-		<script src="https://m4ternersxxumgo.github.io/assets/js/main.js"></script>
+        <script src="assets/js/count-up.min.js"></script>
+        <script src="assets/js/tiny-slider.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/glightbox.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+		<script src="assets/js/main.js"></script>
     </body>
 </html>
