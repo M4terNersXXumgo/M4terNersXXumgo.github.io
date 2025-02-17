@@ -114,7 +114,7 @@
                <div class="col-lg-3 col-md-6">
                    <a href="#modalTabelHipotermia" class="box-style single-counter text-center mb-30" data-bs-toggle="modal" data-bs-target="#modalTabelHipotermia">
                        <div class="box-icon-style mx-auto">
-                           <i class="lni lni-users"></i>
+                           <i class="lni lni-list"></i>
                        </div>
                        <div class="counter-content">
                            <h5 id="secondo" class="countup count color-1" cup-end="10" cup-append="k">Hipotermia</h5>
@@ -125,7 +125,7 @@
                <div class="col-lg-3 col-md-6">
                    <a href="#modalTabelDefisitNutrisi" class="box-style single-counter text-center mb-30" data-bs-toggle="modal" data-bs-target="#modalTabelDefisitNutrisi">
                        <div class="box-icon-style mx-auto">
-                           <i class="lni lni-checkmark"></i>
+                           <i class="lni lni-list"></i>
                        </div>
                        <div class="counter-content">
                            <h5 id="secondo" class="countup count color-1" cup-end="12" cup-append="k">Resiko Defisit Nutrisi</h5>
@@ -136,7 +136,7 @@
                <div class="col-lg-3 col-md-6">
                    <a href="#modalTabelNausea" class="box-style single-counter text-center mb-30" data-bs-toggle="modal" data-bs-target="#modalTabelNausea">
                        <div class="box-icon-style mx-auto">
-                           <i class="lni lni-timer"></i>
+                           <i class="lni lni-list"></i>
                        </div>
                        <div class="counter-content">
                            <h5 id="secondo" class="countup count color-1" cup-end="230" cup-append="k">Nausea</h5>
@@ -147,9 +147,9 @@
           </div>
           <div class="row justify-content-center">
                <div class="col-lg-3 col-md-6">
-                   <a href="#" class="box-style single-counter text-center mb-30">
+                   <a href="#modalTabelHipovolemia" class="box-style single-counter text-center mb-30" data-bs-toggle="modal" data-bs-target="#modalTabelHipovolemia">
                        <div class="box-icon-style mx-auto">
-                           <i class="lni lni-users"></i>
+                           <i class="lni lni-list"></i>
                        </div>
                        <div class="counter-content">
                            <h6 id="secondo" class="countup count color-1" cup-end="20" cup-append="">Kekurangan Voleme Cairan</h6>
@@ -158,9 +158,9 @@
                     </a>
                </div>
                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="box-style single-counter text-center mb-30">
+                <a href="#modalTabelgrn" class="box-style single-counter text-center mb-30" data-bs-toggle="modal" data-bs-target="#modalTabelgrn">
                         <div class="box-icon-style mx-auto">
-                            <i class="lni lni-users"></i>
+                            <i class="lni lni-list"></i>
                         </div>
                         <div class="counter-content">
                             <h6 id="secondo" class="countup count color-1" cup-end="20" cup-append="">Gangguan Rasa Nyaman<br> Berhubungan  Dengan<br> Adaptasi Kehamilan</h6>
@@ -175,7 +175,7 @@
 
      <!-- Modal Hipotermia -->
      <div class="modal fade" id="modalTabelHipotermia" tabindex="-1" aria-labelledby="modalTabelLabel" aria-hidden="true">
-     <div class="modal-dialog modal-lg">
+     <div class="modal-dialog modal-xl">
          <div class="modal-content">
              <div class="modal-header">
                  <h5 class="modal-title" id="modalTabelLabel">Tabel Intervensi Keperawatan</h5>
@@ -252,7 +252,7 @@
 
      <!-- Modal Defisit Nutrisi -->
      <div class="modal fade" id="modalTabelDefisitNutrisi" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-lg">
+     <div class="modal-dialog modal-xl">
          <div class="modal-content">
              <div class="modal-header">
                  <h5 class="modal-title" id="modalLabel">Tabel Intervensi Defisit Nutrisi</h5>
@@ -347,9 +347,9 @@
      </div>
      </div>
 
-     <!-- Modal Nausea -->
+    <!-- Modal Nausea -->
     <div class="modal fade" id="modalTabelNausea" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-lg">
+     <div class="modal-dialog modal-xl">
          <div class="modal-content">
              <div class="modal-header">
                  <h5 class="modal-title" id="modalLabel">Tabel Intervensi Nausea</h5>
@@ -414,7 +414,141 @@
              </div>
          </div>
      </div>
- </div>
+    </div>
+
+    <!-- Modal Hipovolemia -->
+    <div class="modal fade" id="modalTabelHipovolemia" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Tabel Intervensi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabel Responsif -->
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>No</th>
+                                <th>Diagnosa</th>
+                                <th>Tujuan</th>
+                                <th>Intervensi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>Hipovolemia b.d kekurangan intake cairan (D.0023)</td>
+                                <td>
+                                    Setelah dilakukan intervensi keperawatan selama 2x24 jam, maka Status Cairan membaik dengan Kriteria Hasil:
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Turgor kulit meningkat</li>
+                                        <li>Output urine meningkat</li>
+                                        <li>Berat badan membaik</li>
+                                        <li>Oliguria membaik</li>
+                                        <li>Intake cairan membaik</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    Manajemen Hipovolemia (I.03116)
+                                    <br><strong>Observasi:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Periksa tanda dan gejala hipovolemia (mis. frekuensi, nadi teraba lemah, tekanan darah menurun, tekanan nadi menyempit, turgor kulit menurun, membran mukosa kering, volume urin menurun, haus, lemah)</li>
+                                        <li>Monitor intake dan output cairan</li>
+                                    </ol>
+                                    <br><strong>Terapeutik:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Hitung kebutuhan cairan</li>
+                                        <li>Berikan asupan cairan oral</li>
+                                    </ol>
+                                    <br><strong>Edukasi:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Anjurkan memperbanyak asupan cairan oral</li>
+                                    </ul>
+                                    <br><strong>Kolaborasi:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Kolaborasi pemberian cairan IV isotonis (mis. NaCl, RL)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal GRN -->
+    <div class="modal fade" id="modalTabelgrn" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Tabel Intervensi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabel Responsif -->
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>No</th>
+                                <th>Diagnosa</th>
+                                <th>Tujuan</th>
+                                <th>Intervensi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>Gangguan Rasa Nyaman b.d gangguan adaptasi kehamilan (D.0074)</td>
+                                <td>
+                                    Setelah dilakukan intervensi keperawatan selama 2x24 jam, maka Status Kenyamanan meningkat dengan Kriteria Hasil:
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Kesejahteraan psikologis meningkat</li>
+                                        <li>Rileks meningkat</li>
+                                        <li>Keluhan tidak nyaman menurun</li>
+                                        <li>Gelisah menurun</li>
+                                        <li>Mual menurun</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    Terapi Relaksasi (I.09326)
+                                    <br><strong>Observasi:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Identifikasi penurunan tingkat energi, ketidakmampuan berkonsentrasi, atau gejala lain yang menganggu kemampuan kognitif</li>
+                                        <li>Identifikasi Teknik relaksasi yang pernah efektif digunakan</li>
+                                        <li>Identifikasi kesediaan, kemampuan, dan penggunaan teknik sebelumnya</li>
+                                        <li>Monitor respons terhadap terapi relaksasi</li>
+                                    </ol>
+                                    <br><strong>Terapeutik:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Ciptakan lingkungan tenang dan tanpa gangguan dengan pencahayaan dan suhu ruang nyaman, jika memungkinkan</li>
+                                        <li>Berikan informasi tertulis tentang persiapan dan prosedur teknik relaksasi</li>
+                                        <li>Gunakan relaksasi sebagai strategi penunjang dengan analgetik atau tindakan medis lain, jika perlu</li>
+                                    </ol>
+                                    <br><strong>Edukasi:</strong>
+                                    <ol style="list-style-type: decimal; padding-left: 20px;">
+                                        <li>Jelaskan tujuan, manfaat, batasan, dan jenis relaksasi yang tersedia (mis. musik, meditasi, napas dalam, relaksasi otot progresif)</li>
+                                        <li>Jelaskan secara rinci intervensi relaksasi yang dipilih</li>
+                                        <li>Anjurkan mengambil posisi nyaman</li>
+                                        <li>Anjurkan rileks dan merasakan sensasi relaksasi</li>
+                                        <li>Anjurkan sering mengulangi atau melatih teknik yang dipilih</li>
+                                    </ol style="list-style-type: decimal; padding-left: 20px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+            </div>
+    </div>
 
 
         <!-- ========================= footer start ========================= -->
