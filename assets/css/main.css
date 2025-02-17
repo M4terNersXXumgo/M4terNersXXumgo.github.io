@@ -1789,11 +1789,18 @@ p {
 }
 
 .hero-section .hero-img {
-  position: absolute;
+  position: static;
   right: 0;
   top: 107px;
-  width: 48%;
+  width: 100%;
+  max-width: 800px; /* Sesuaikan max-width agar tidak terlalu besar */
+  margin: 0 auto; /* Pusatkan gambar */
   text-align: right;
+}
+
+.hero-section .hero-img img {
+  width: 100%; /* Pastikan gambar berskala dengan parent */
+  height: auto; /* Hindari distorsi */
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1824,9 +1831,9 @@ p {
 
 @media (max-width: 767px) {
   .hero-section .hero-img {
-    position: relative;
-    width: 100%;
-    top: 0;
+    text-align: center;
+    max-width: 80%; /* Sesuaikan ukuran gambar agar tidak terlalu besar */
+    margin: 0 auto; /* Pusatkan gambar */
   }
 }
 
